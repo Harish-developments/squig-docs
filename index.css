@@ -1,0 +1,73 @@
+
+.main{
+    height : fit-content;
+}
+
+.logo{
+    display: flex;
+    flex: 1fr;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height : 15rem;
+    width: 15rem;
+}
+
+.logo div h1{
+    font-size: 5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about{
+    font-size: 1.5rem;
+}
+
+.syntax,.quick-start{
+
+    padding : 5rem;
+    padding-top : 2.5rem;
+}
+
+.example{
+    background-color: rgb(209, 209, 209);
+    font-size: 1.5rem;
+    padding : 2rem;
+    display: flex;
+}
+
+.syntax .output{
+    background-color: rgb(209, 209, 209);
+    font-size: 1.5rem;
+    padding : 2rem;
+    display: flex;
+}
+
+@media (min-width : 360px) and (max-width : 780px){
+    .main{
+        /*background-color: red;*/
+        padding : 1rem;
+    }
+
+    .logo{
+        flex-direction: column-reverse;
+    }
+
+    .logo div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo h1{
+        font-size: 1.5rem;
+    }
+
+    .syntax{
+        padding : 10px;
+    }
+}
